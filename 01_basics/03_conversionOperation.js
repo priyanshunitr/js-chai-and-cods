@@ -1,11 +1,11 @@
 let score = "hitesh"
 
-//console.log(typeof score);
-//console.log(typeof(score));
+//console.log(typeof score);    // "string"
+//console.log(typeof(score));   // "string"
 
 let valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+//console.log(typeof valueInNumber);   // "number"
+//console.log(valueInNumber);   // NaN
 
 
 // "33" => 33
@@ -15,7 +15,7 @@ let valueInNumber = Number(score)
 let isLoggedIn = "hitesh"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+//  console.log(booleanIsLoggedIn);     // true
 
 // 1 => true; 0 => false
 // "" => false
@@ -24,14 +24,14 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+// console.log(stringNumber);   // "33"
+// console.log(typeof stringNumber);    // "string"
 
 // *********************** Operations ***********************
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue);    // -3
 
 // console.log(2+2);
 // console.log(2-2);
@@ -61,7 +61,7 @@ let num1, num2, num3
 num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
-++gameCounter;
+++gameCounter;   //gameCounter = gameCounter+1
 console.log(gameCounter);
 
 // link to study
