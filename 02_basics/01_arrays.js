@@ -12,6 +12,11 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.push(7)
 // myArr.pop()
 
+    /*Original: [0, 1, 2, 3, 4, 5]
+    push(6): [0, 1, 2, 3, 4, 5, 6]
+    push(7): [0, 1, 2, 3, 4, 5, 6, 7]
+    pop():   [0, 1, 2, 3, 4, 5, 6] */
+
 // myArr1.unshift(9)
 // [9, 0, 1, 2, 3, 4, 5]
 // myArr1.shift()
