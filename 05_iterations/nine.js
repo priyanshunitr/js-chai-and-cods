@@ -6,6 +6,8 @@ const myNums = [1, 2, 3]
 // }, 0)
 
 const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+// initial value 0
+//adds each element to accumulator i.e, 0+1=1, 1+2=3, 3+3=6
 
 console.log(myTotal);
 

@@ -41,5 +41,6 @@ const books = [
 
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
+    // return + curly brackets coz you went to new line
 })
   console.log(userBooks);
