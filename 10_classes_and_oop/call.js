@@ -1,15 +1,36 @@
-function SetUsername(username){
-    //complex DB calls
-    this.username = username
-    console.log("called");
+{
+    function SetUsername(username) {
+        //complex DB calls
+        this.username = username
+        console.log("called with .call()");
+    }
+
+    function createUser(username, email, password) {
+        SetUsername.call(this, username)
+
+        this.email = email
+        this.password = password
+    }
+
+    const chai = new createUser("chai", "chai@fb.com", "123")
+    console.log(chai);
 }
 
-function createUser(username, email, password){
-    SetUsername.call(this, username)
-   
-    this.email = email
-    this.password = password
-}
+// apply method
+{
+    function SetUsername(username) {
+        //complex DB calls
+        this.username = username
+        console.log("called with .apply()");
+    }
 
-const chai = new createUser("chai", "chai@fb.com", "123")
-console.log(chai);
+    function createUser(username, email, password) {
+        SetUsername.apply(this, [username])
+
+        this.email = email
+        this.password = password
+    }
+
+    const chai = new createUser("chai", "chai@fb.com", "123")
+    console.log(chai);
+}
